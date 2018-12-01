@@ -26,6 +26,31 @@ yarn add parcel-plugin-inlinesvg
 npm run example
 ```
 
+### Configuration
+
+Create a `.parcelrc` in the roof of your project
+
+#### .parcelrc
+```
+{
+  "inlinesvg": {
+    "exts": ["svg"],
+    "plugins": [
+      {
+        "removeDoctype": true
+      },
+      {
+        "removeComments": true
+      },
+      {
+        "removeXMLNS": true
+      }
+    ]
+  }
+}
+
+```
+
 ## License
 MIT License
 
